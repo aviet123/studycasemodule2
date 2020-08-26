@@ -133,14 +133,14 @@ public class Student implements Serializable {
 
     @Override
     public String toString() {
-        return  "studentID: " + studentID +
-                ", fullName: '" + fullName + '\'' +
-                ", age: " + age +
-                ", address: '" + address + '\'' +
-                ", homeTown: '" + homeTown + '\'' +
-                ", mathScore: " + mathScore +
-                ", literatureScore: " + literatureScore +
-                ", englishScore: " + englishScore +
-                ", academicGrade: '" + academicGrade + '\'';
+        return  "StudentID: " + studentID +
+                "| FullName: '" + fullName + '\'' +
+                "| Age: " + age +
+                "| Address: '" + address + '\'' +
+                "| HomeTown: '" + homeTown + '\'' +
+                "| MathScore: " + mathScore +
+                "| LiteratureScore: " + literatureScore +
+                "| EnglishScore: " + englishScore +
+                "| AcademicGrade: '" + academicGrade + '\'';
     }
 }

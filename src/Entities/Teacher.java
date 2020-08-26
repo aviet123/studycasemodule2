@@ -102,13 +102,13 @@ public class Teacher implements Serializable {
 
     @Override
     public String toString() {
-        return  "teacherID: " + teacherID +
-                ", fullName: '" + fullName + '\'' +
-                ", age: " + age +
-                ", address: '" + address + '\'' +
-                ", homeTown: '" + homeTown + '\'' +
-                ", yearIn: " + yearIn +
-                ", currentYear: " + currentYear +
-                ", specialization: '" + specialization + '\'';
+        return  "TeacherID: " + teacherID +
+                "| fullName: '" + fullName + '\'' +
+                "| Age: " + age +
+                "| Address: '" + address + '\'' +
+                "| HomeTown: '" + homeTown + '\'' +
+                "| YearIn: " + yearIn +
+                "| CurrentYear: " + currentYear +
+                "| Specialization: '" + specialization + '\'';
     }
 }

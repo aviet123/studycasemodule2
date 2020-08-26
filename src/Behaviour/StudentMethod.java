@@ -11,9 +11,10 @@ public class StudentMethod implements IService {
     static{
         try{
             List<Student> lists = ConnectToFile.readStudentFromFile("student.dat");
-            if( lists!=null)students = lists;
+            if( lists!=null)
+                students = lists;
         } catch(Exception e){
-            System.out.println("lỗi k đọc file");
+            System.out.println("Error!! Can not read file");
         }
     }
 
@@ -41,9 +42,7 @@ public class StudentMethod implements IService {
     }
     @Override
     public void getAll() {
-        for (Student student: students){
-            System.out.println(student.toString());
-        }
+            DisplayList.displayStudent(students);
     }
     @Override
     public void delete(int id) {

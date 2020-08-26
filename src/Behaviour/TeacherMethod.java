@@ -41,9 +41,7 @@ public class TeacherMethod implements IService {
 
     @Override
     public void getAll() {
-        for (Teacher teacher : teachers){
-            System.out.println(teacher.toString());
-        }
+        DisplayList.displayTeacher(teachers);
     }
 
     @Override
