@@ -20,7 +20,15 @@ public class View {
                 System.out.println("2: Teacher Management");
                 System.out.println("0: Exit");
                 System.out.println("Enter your choice: ");
-                int choice = Integer.parseInt(input.nextLine());
+                int choice;
+                do {
+                    try {
+                        choice = Integer.parseInt(input.nextLine());
+                        break;
+                    }catch (Exception e){
+                        System.out.println("Please enter again!!");
+                    }
+                }while (true);
                 if (choice == 1) {
                     do {
                         selectAppStudent();
