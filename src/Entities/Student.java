@@ -8,9 +8,9 @@ public class Student implements Serializable {
     private int age;
     private String address;
     private String homeTown;
-    private double mathScore;
-    private double literatureScore;
-    private double englishScore;
+    private float mathScore;
+    private float literatureScore;
+    private float englishScore;
     private String academicGrade;
 
 
@@ -20,7 +20,7 @@ public class Student implements Serializable {
     }
 
     public Student(int studentID, String fullName, int age, String address, String homeTown,
-                   double mathScore, double literatureScore, double englishScore) {
+                   float mathScore, float literatureScore, float englishScore) {
         this.studentID = ++studentID;
         this.fullName = fullName;
         this.age = age;
@@ -32,8 +32,8 @@ public class Student implements Serializable {
         this.academicGrade = getStudentPerformance();
     }
 
-    public Student(String fullName, int age, String address, String homeTown, double mathScore,
-                   double literalScore, double englishScore) {
+    public Student(String fullName, int age, String address, String homeTown, float mathScore,
+                   float literalScore, float englishScore) {
         this.fullName = fullName;
         this.age = age;
         this.address = address;
@@ -87,31 +87,31 @@ public class Student implements Serializable {
         this.homeTown = homeTown;
     }
 
-    public double getMathScore() {
+    public float getMathScore() {
         return mathScore;
     }
 
-    public void setMathScore(double mathScore) {
+    public void setMathScore(float mathScore) {
         this.mathScore = mathScore;
     }
 
-    public double getLiteratureScore() {
+    public float getLiteratureScore() {
         return literatureScore;
     }
 
-    public void setLiteratureScore(double literatureScore) {
+    public void setLiteratureScore(float literatureScore) {
         this.literatureScore = literatureScore;
     }
 
-    public double getEnglishScore() {
+    public float getEnglishScore() {
         return englishScore;
     }
 
-    public void setEnglishScore(double englishScore) {
+    public void setEnglishScore(float englishScore) {
         this.englishScore = englishScore;
     }
 
-    public double getAverageScore(){
+    public float getAverageScore(){
         return (mathScore + englishScore + literatureScore)/3;
     }
 

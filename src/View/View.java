@@ -109,7 +109,7 @@ public class View {
                 id = Integer.parseInt(input.nextLine());
                 break;
             }catch (Exception e){
-                System.out.println("Please enter again!!");
+                System.out.println("Wrong format! Please enter again!!");
             }
         }while (true);
         String[] sp2 = {"Mathematics","Physical","Chemistry","Language","Literature"};
@@ -122,7 +122,7 @@ public class View {
                 ageEdit = Integer.parseInt(input.nextLine());
                 break;
             }catch (Exception e){
-                System.out.println("Please enter again!!");
+                System.out.println("Wrong format! Please enter again!!");
             }
         }while (true);
         System.out.println("Enter teacher's address: ");
@@ -136,7 +136,7 @@ public class View {
                 yearInEdit = Integer.parseInt(input.nextLine());
                 break;
             }catch (Exception e){
-                System.out.println("Please enter again!!");
+                System.out.println("Wrong format! Please enter again!!");
             }
         }while (true);
         System.out.println("Enter current year teacher is teaching: ");
@@ -146,7 +146,7 @@ public class View {
                 currentYearEdit = Integer.parseInt(input.nextLine());
                 break;
             }catch (Exception e){
-                System.out.println("Please enter again!!");
+                System.out.println("Wrong format! Please enter again!!");
             }
         }while (true);
         System.out.println("Enter specialization of teacher: ");
@@ -157,7 +157,7 @@ public class View {
                 selection2 = Integer.parseInt(input.nextLine());
                 break;
             }catch (Exception e){
-                System.out.println("Please enter again!!");
+                System.out.println("Wrong format! Please enter again!!");
             }
         }while (true);
         String specializationEdit = sp2[selection2-1];
@@ -176,7 +176,7 @@ public class View {
                 age = Integer.parseInt(input.nextLine());
                 break;
             }catch (Exception e){
-                System.out.println("Please enter again!!");
+                System.out.println("Wrong format! Please enter again!!");
             }
         }while (true);
         System.out.println("Enter teacher's address: ");
@@ -190,7 +190,7 @@ public class View {
                 yearIn = Integer.parseInt(input.nextLine());
                 break;
             }catch (Exception e){
-                System.out.println("Please enter again!!");
+                System.out.println("Wrong format! Please enter again!!");
             }
         }while (true);
         System.out.println("Enter current year teacher is teaching: ");
@@ -200,7 +200,7 @@ public class View {
                 currentYear = Integer.parseInt(input.nextLine());
                 break;
             }catch (Exception e){
-                System.out.println("Please enter again!!");
+                System.out.println("Wrong format! Please enter again!!");
             }
         }while (true);
         System.out.println("Enter specialization of teacher: ");
@@ -211,7 +211,7 @@ public class View {
                 selection = Integer.parseInt(input.nextLine());
                 break;
             }catch (Exception e){
-                System.out.println("Please enter again!!");
+                System.out.println("Wrong format! Please enter again!!");
             }
         }while (true);
         String specialization = sp[selection-1];
@@ -226,7 +226,7 @@ public class View {
                 id = Integer.parseInt(input.nextLine());
                 break;
             }catch (Exception e){
-                System.out.println("Please enter again!!");
+                System.out.println("Wrong format! Please enter again!!");
             }
         }while (true);
         System.out.println("Enter name needing to edit");
@@ -238,7 +238,7 @@ public class View {
                 ageEdit = Integer.parseInt(input.nextLine());
                 break;
             }catch (Exception e){
-                System.out.println("Please enter again!!");
+                System.out.println("Wrong format! Please enter again!!");
             }
         }while (true);
         System.out.println("Enter address needing to edit: ");
@@ -246,33 +246,33 @@ public class View {
         System.out.println("Enter hometown needing to edit");
         String hometownEdit = input.nextLine();
         System.out.println("Enter math score needing to edit");
-        double mathScoreEdit;
+        float mathScoreEdit;
         do {
             try {
                 mathScoreEdit = Float.parseFloat(input.nextLine());
                 break;
             }catch (Exception e){
-                System.out.println("Please enter again!!");
+                System.out.println("Wrong format! Please enter again!!");
             }
         }while (true);
         System.out.println("Enter literature score needing to edit");
-        double literatureScoreEdit;
+        float literatureScoreEdit;
         do {
             try {
                 literatureScoreEdit = Float.parseFloat(input.nextLine());
                 break;
             }catch (Exception e){
-                System.out.println("Please enter again!!");
+                System.out.println("Wrong format! Please enter again!!");
             }
         }while (true);
         System.out.println("Enter english score needing to edit");
-        double englishScoreEdit;
+        float englishScoreEdit;
         do {
             try {
                 englishScoreEdit = Float.parseFloat(input.nextLine());
                 break;
             }catch (Exception e){
-                System.out.println("Please enter again!!");
+                System.out.println("Wrong format! Please enter again!!");
             }
         }while (true);
         studentmethod.update(id,new Student(name,ageEdit,addressEdit,hometownEdit,
@@ -288,7 +288,7 @@ public class View {
                 age = Integer.parseInt(input.nextLine());
                 break;
             }catch (Exception e){
-                System.out.println("Please enter again!!");
+                System.out.println("Wrong format! Please enter again!!");
             }
         }while (true);
         System.out.println("Enter student's address: ");
@@ -296,33 +296,33 @@ public class View {
         System.out.println("Enter student's hometown: ");
         String hometown = input.nextLine();
         System.out.println("Enter student's mathScore: ");
-        double mathScore;
+        float mathScore;
         do {
             try {
                 mathScore = Float.parseFloat(input.nextLine());
                 break;
             }catch (Exception e){
-                System.out.println("Please enter again!!");
+                System.out.println("Wrong format! Please enter again!!");
             }
         }while (true);
         System.out.println("Enter student's literatureScore: ");
-        double literatureScore;
+        float literatureScore;
         do {
             try {
                 literatureScore = Float.parseFloat(input.nextLine());
                 break;
             }catch (Exception e){
-                System.out.println("Please enter again!!");
+                System.out.println("Wrong format! Please enter again!!");
             }
         }while (true);
         System.out.println("Enter student's englishScore: ");
-        double englishScore;
+        float englishScore;
         do {
             try {
                 englishScore = Float.parseFloat(input.nextLine());
                 break;
             }catch (Exception e){
-                System.out.println("Please enter again!!");
+                System.out.println("Wrong format! Please enter again!!");
             }
         }while (true);
         studentmethod.add(new Student(checkIDFromFile(),fullName,age,address,hometown,mathScore,literatureScore,englishScore));
