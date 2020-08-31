@@ -75,4 +75,12 @@ public class TeacherMethod implements IService {
         }
         return null;
     }
+    public int checkIDTeacherFromFile(){
+        int checkID = 0;
+        for(Teacher teacher: TeacherMethod.teachers){
+            if (teacher.getTeacherID() > checkID)
+                checkID = teacher.getTeacherID();
+        }
+        return checkID;
+    }
 }

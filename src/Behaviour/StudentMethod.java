@@ -70,4 +70,12 @@ public class StudentMethod implements IService {
         }
         return null;
     }
+    public int checkIDFromFile(){
+        int checkID = 0;
+        for(Student student: StudentMethod.students){
+            if (student.getStudentID() > checkID)
+                checkID = student.getStudentID();
+        }
+        return checkID;
+    }
 }

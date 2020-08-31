@@ -215,7 +215,8 @@ public class View {
             }
         }while (true);
         String specialization = sp[selection-1];
-        teacherMethod.add(new Teacher(checkIDTeacherFromFile(),fullName,age,address,hometown,yearIn,currentYear,specialization));
+        int teacherID = teacherMethod.checkIDTeacherFromFile();
+        teacherMethod.add(new Teacher(teacherID,fullName,age,address,hometown,yearIn,currentYear,specialization));
     }
 
     private static void editStudent(Scanner input, StudentMethod studentmethod) {
@@ -325,7 +326,8 @@ public class View {
                 System.out.println("Wrong format! Please enter again!!");
             }
         }while (true);
-        studentmethod.add(new Student(checkIDFromFile(),fullName,age,address,hometown,mathScore,literatureScore,englishScore));
+        int studentID = studentmethod.checkIDFromFile();
+        studentmethod.add(new Student(studentID,fullName,age,address,hometown,mathScore,literatureScore,englishScore));
     }
 
     private static void selectAppTeacher() {
@@ -347,21 +349,5 @@ public class View {
         System.out.println("6. Get Best Performance Student ");
         System.out.println("7. Write to file");
         System.out.println("0: Back");
-    }
-    private static int checkIDFromFile(){
-        int checkID = 0;
-        for(Student student: StudentMethod.students){
-            if (student.getStudentID() > checkID)
-                checkID = student.getStudentID();
-        }
-        return checkID;
-    }
-    private static int checkIDTeacherFromFile(){
-        int checkID = 0;
-        for(Teacher teacher: TeacherMethod.teachers){
-            if (teacher.getTeacherID() > checkID)
-                checkID = teacher.getTeacherID();
-        }
-        return checkID;
     }
 }

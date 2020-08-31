@@ -7,7 +7,7 @@ import java.util.List;
 
 public class DisplayList {
     public static void displayStudent(List<Student> students) {
-            System.out.println("\n--------------Employee List---------------\n");
+            System.out.println("\n--------------Student List---------------\n");
             System.out.printf("%-5s%-20s%-15s%-15s%-15s%-15s%-20s%-15s%-15s%n", "ID","FullName","Age",
                     "Address","HomeTown","MathScore","LiteratureScore","EnglishScore","AcademicGrade");
             for(Student t : students) {
@@ -16,7 +16,7 @@ public class DisplayList {
             }
         }
     public static void displayTeacher(List<Teacher> teachers) {
-        System.out.println("\n--------------Employee List---------------\n");
+        System.out.println("\n--------------Teacher List---------------\n");
         System.out.printf("%-5s%-20s%-15s%-15s%-15s%-15s%-15s%-15s%n", "ID","FullName","Age",
                 "Address","HomeTown","YearIn","CurrentYear","Specialization");
         for(Teacher tc : teachers) {
